@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "domos-stones-and-ores:block/serpentinite_block",
+    "top": "domos-stones-and-ores:block/serpentinite_block",
+    "side": "domos-stones-and-ores:block/serpentinite_block"
+  }
+}

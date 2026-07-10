@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "domos-stones-and-ores:block/serpentinite_block"
+  }
+}
