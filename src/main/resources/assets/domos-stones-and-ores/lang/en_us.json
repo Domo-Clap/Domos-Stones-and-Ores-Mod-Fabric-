@@ -1,5 +1,8 @@
 {
   "block.domos-stones-and-ores.serpentinite_block": "Serpentinite Block",
   "block.domos-stones-and-ores.serpentinite_stairs": "Serpentinite Stairs",
-  "block.domos-stones-and-ores.serpentinite_slab": "Serpentinite Slab"
+  "block.domos-stones-and-ores.serpentinite_slab": "Serpentinite Slab",
+  "block.domos-stones-and-ores.polished_serpentinite_block": "Polished Serpentinite Block",
+  "block.domos-stones-and-ores.polished_serpentinite_stairs": "Polished Serpentinite Stairs",
+  "block.domos-stones-and-ores.polished_serpentinite_slab": "Polished Serpentinite Slab"
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "domos-stones-and-ores:block/polished_serpentinite_slab"
+    },
+    "type=top": {
+      "model": "domos-stones-and-ores:block/polished_serpentinite_slab_top"
+    },
+    "type=double": {
+      "model": "domos-stones-and-ores:block/polished_serpentinite_block"
+    }
+  }
+}
