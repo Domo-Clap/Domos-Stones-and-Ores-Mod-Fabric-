@@ -1,4 +1,14 @@
 {
   "replace": false,
-  "values": ["domos-stones-and-ores:serpentinite_block"]
+  "values": [
+    "domos-stones-and-ores:serpentinite_block",
+    "domos-stones-and-ores:serpentinite_stairs",
+    "domos-stones-and-ores:serpentinite_slab",
+    "domos-stones-and-ores:polished_serpentinite_block",
+    "domos-stones-and-ores:polished_serpentinite_stairs",
+    "domos-stones-and-ores:polished_serpentinite_slab",
+    "domos-stones-and-ores:serpentinite_bricks_block",
+    "domos-stones-and-ores:serpentinite_bricks_stairs",
+    "domos-stones-and-ores:serpentinite_bricks_slab"
+  ]
 }
