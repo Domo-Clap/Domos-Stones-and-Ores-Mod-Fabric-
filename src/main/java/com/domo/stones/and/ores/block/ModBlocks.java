@@ -15,7 +15,9 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    // Creates our Serpentinite block object and registers it
+    // -----------------------------------------
+    // Base Serpentinite block types
+    // -----------------------------------------
     public static final Block SERPENTINITE_BLOCK = registerBlock(
             "serpentinite_block",
             new Block(AbstractBlock.Settings.create()
@@ -38,6 +40,9 @@ public class ModBlocks {
                     .strength(1.5f, 3.5f))
     );
 
+    // -----------------------------------------
+    // Polished Serpentinite block types
+    // -----------------------------------------
     public static final Block POLISHED_SERPENTINITE_BLOCK = registerBlock(
       "polished_serpentinite_block",
       new Block(AbstractBlock.Settings.create()
@@ -59,6 +64,9 @@ public class ModBlocks {
                     .strength(1.5f, 3.5f))
     );
 
+    // -----------------------------------------
+    // Serpentinite Brick block types
+    // -----------------------------------------
     public static final Block SERPENTINITE_BRICKS_BLOCK = registerBlock(
             "serpentinite_bricks_block",
             new Block(AbstractBlock.Settings.create()
@@ -72,6 +80,13 @@ public class ModBlocks {
                     AbstractBlock.Settings.create()
                             .requiresTool()
                             .strength(1.5f, 3.5f))
+    );
+
+    public static final Block SERPENTINITE_BRICKS_SLAB = registerBlock(
+            "serpentinite_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(1.5f, 3.5f))
     );
 
     // Function that takes our block and registers it into the correct registry
@@ -104,7 +119,7 @@ public class ModBlocks {
     public static void registerBlocks() {
         DomoSStonesAndOres.LOGGER.info("Registering Mod Blocks for " + DomoSStonesAndOres.MOD_ID);
 
-        // Adds our block item to a creative menu
+        // Base serpentinite ore blocks being added to the Building Blocks creative tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).
                 register(entries -> entries.add(SERPENTINITE_BLOCK));
 
@@ -114,6 +129,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).
                 register(entries -> entries.add(SERPENTINITE_SLAB));
 
+        // Polished serpentinite blocks being added to the Building Blocks creative tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(POLISHED_SERPENTINITE_BLOCK));
 
@@ -123,7 +139,14 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(POLISHED_SERPENTINITE_SLAB));
 
+        // Brick blocks being added to the Building Blocks creative tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(SERPENTINITE_BRICKS_BLOCK));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(SERPENTINITE_BRICKS_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(SERPENTINITE_BRICKS_SLAB));
     }
 }
