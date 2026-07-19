@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stone_slab",
+  "key": {
+    "#": {
+      "item": "domos-stones-and-ores:serpentinite_bricks_block"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "domos-stones-and-ores:serpentinite_bricks_slab"
+  }
+}
