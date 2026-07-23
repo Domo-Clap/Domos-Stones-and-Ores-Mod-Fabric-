@@ -89,6 +89,9 @@ public class ModBlocks {
                     .strength(1.5f, 3.5f))
     );
 
+    // -----------------------------------------
+    // Caen Stone block types
+    // -----------------------------------------
     public static final Block CAEN_STONE_BLOCK = registerBlock(
             "caen_stone_block",
             new Block(AbstractBlock.Settings.create()
@@ -109,6 +112,31 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
                     .strength(1.5f, 3.5f))
+    );
+
+    // -----------------------------------------
+    // Caen Stone Bricks block types
+    // -----------------------------------------
+    public static final Block CAEN_STONE_BRICKS = registerBlock(
+            "caen_stone_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block CAEN_STONE_BRICKS_STAIRS = registerBlock(
+            "caen_stone_bricks_stairs",
+            new StairsBlock(CAEN_STONE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(0.5f, 2.5f))
+    );
+
+    public static final Block CAEN_STONE_BRICKS_SLAB = registerBlock(
+            "caen_stone_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
     );
 
     // Function that takes our block and registers it into the correct registry
