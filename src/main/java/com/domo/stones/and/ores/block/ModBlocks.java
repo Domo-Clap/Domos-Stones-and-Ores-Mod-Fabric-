@@ -89,6 +89,28 @@ public class ModBlocks {
                     .strength(1.5f, 3.5f))
     );
 
+    public static final Block CAEN_STONE_BLOCK = registerBlock(
+            "caen_stone_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(1.5f, 3.5f))
+    );
+
+    public static final Block CAEN_STONE_STAIRS = registerBlock(
+            "caen_stone_stairs",
+            new StairsBlock(CAEN_STONE_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(1.5f, 3.5f))
+    );
+
+    public static final Block CAEN_STONE_SLAB = registerBlock(
+      "caen_stone_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(1.5f, 3.5f))
+    );
+
     // Function that takes our block and registers it into the correct registry
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -148,5 +170,14 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(SERPENTINITE_BRICKS_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(CAEN_STONE_BLOCK));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(CAEN_STONE_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(CAEN_STONE_SLAB));
     }
 }
