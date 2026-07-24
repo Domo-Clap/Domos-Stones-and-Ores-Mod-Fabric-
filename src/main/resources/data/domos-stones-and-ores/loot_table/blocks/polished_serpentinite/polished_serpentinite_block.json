@@ -6,9 +6,9 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "domos-stones-and-ores:serpentinite_block"
+          "name": "domos-stones-and-ores:blocks/polished_serpentinite/polished_serpentinite_block"
         }
-    ],
+      ],
       "conditions": [
         {
           "condition": "minecraft:survives_explosion"

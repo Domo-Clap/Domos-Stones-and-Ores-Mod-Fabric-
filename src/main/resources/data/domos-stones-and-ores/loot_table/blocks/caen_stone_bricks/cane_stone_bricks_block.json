@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "domos-stones-and-ores:serpentinite_bricks_block"
+          "name": "domos-stones-and-ores:block/caen_stone_bricks/caen_stone_bricks_block"
         }
       ],
       "conditions": [

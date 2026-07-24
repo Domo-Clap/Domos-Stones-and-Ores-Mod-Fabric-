@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "domos-stones-and-ores:serpentinite_stairs"
+          "name": "domos-stones-and-ores:blocks/serpentinite/serpentinite_stairs"
         }
       ],
       "conditions": [
