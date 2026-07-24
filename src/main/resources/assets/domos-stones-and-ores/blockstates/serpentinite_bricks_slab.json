@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "domos-stones-and-ores:block/serpentinite_bricks_slab"
+      "model": "domos-stones-and-ores:block/serpentinite_bricks/serpentinite_bricks_slab"
     },
     "type=top": {
-      "model": "domos-stones-and-ores:block/serpentinite_bricks_slab_top"
+      "model": "domos-stones-and-ores:block/serpentinite_bricks/serpentinite_bricks_slab_top"
     },
     "type=double": {
-      "model": "domos-stones-and-ores:block/serpentinite_bricks_block"
+      "model": "domos-stones-and-ores:block/serpentinite_bricks/serpentinite_bricks_block"
     }
   }
 }

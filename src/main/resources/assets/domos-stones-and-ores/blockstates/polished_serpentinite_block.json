@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "domos-stones-and-ores:block/polished_serpentinite_block"
+      "model": "domos-stones-and-ores:block/polished_serpentinite/polished_serpentinite_block"
     }
   }
 }

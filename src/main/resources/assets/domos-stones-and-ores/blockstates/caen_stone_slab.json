@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "domos-stones-and-ores:block/caen_stone_slab"
+      "model": "domos-stones-and-ores:block/caen_stone/caen_stone_slab"
     },
     "type=top": {
-      "model": "domos-stones-and-ores:block/caen_stone_slab_top"
+      "model": "domos-stones-and-ores:block/caen_stone/caen_stone_slab_top"
     },
     "type=double": {
-      "model": "domos-stones-and-ores:block/caen_stone_block"
+      "model": "domos-stones-and-ores:block/caen_stone/caen_stone_block"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "domos-stones-and-ores:block/caen_stone_block"
+      "model": "domos-stones-and-ores:block/caen_stone/caen_stone_block"
     }
   }
 }

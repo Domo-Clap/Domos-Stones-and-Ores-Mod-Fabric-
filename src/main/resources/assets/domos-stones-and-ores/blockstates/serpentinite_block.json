@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "domos-stones-and-ores:block/serpentinite_block"
+      "model": "domos-stones-and-ores:block/serpentinite/serpentinite_block"
     }
   }
 }
