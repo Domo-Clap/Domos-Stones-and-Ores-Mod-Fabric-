@@ -118,7 +118,7 @@ public class ModBlocks {
     // Caen Stone Bricks block types
     // -----------------------------------------
     public static final Block CAEN_STONE_BRICKS = registerBlock(
-            "caen_stone_bricks",
+            "caen_stone_bricks_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
                     .strength(0.5f, 2.5f))
@@ -207,5 +207,14 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(CAEN_STONE_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(CAEN_STONE_BRICKS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(CAEN_STONE_BRICKS_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(CAEN_STONE_BRICKS_SLAB));
     }
 }
