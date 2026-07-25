@@ -9,6 +9,12 @@
     "domos-stones-and-ores:polished_serpentinite_slab",
     "domos-stones-and-ores:serpentinite_bricks_block",
     "domos-stones-and-ores:serpentinite_bricks_stairs",
-    "domos-stones-and-ores:serpentinite_bricks_slab"
+    "domos-stones-and-ores:serpentinite_bricks_slab",
+    "domos-stones-and-ores:caen_stone_block",
+    "domos-stones-and-ores:caen_stone_slab",
+    "domos-stones-and-ores:caen_stone_stairs",
+    "domos-stones-and-ores:caen_stone_bricks_block",
+    "domos-stones-and-ores:caen_stone_bricks_slab",
+    "domos-stones-and-ores:caen_stone_bricks_stairs"
   ]
 }

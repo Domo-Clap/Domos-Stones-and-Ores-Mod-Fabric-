@@ -9,6 +9,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
+import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import org.slf4j.Logger;
@@ -25,6 +26,9 @@ public class DomoSStonesAndOres implements ModInitializer {
 	public static final RegistryKey<PlacedFeature> CUSTOM_STONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
 			Identifier.of("domos-stones-and-ores", "serpentinite_block"));
 
+	public static final RegistryKey<PlacedFeature> CAEN_STONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
+			Identifier.of("domos-stones-and-ores", "caen_stone_block"));
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -35,6 +39,17 @@ public class DomoSStonesAndOres implements ModInitializer {
 
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_STONE_PLACED_KEY);
 
+		BiomeModifications.addFeature(
+				BiomeSelectors.includeByKey(
+					BiomeKeys.SAVANNA,
+					BiomeKeys.BADLANDS,
+					BiomeKeys.MANGROVE_SWAMP,
+					BiomeKeys.SAVANNA_PLATEAU,
+					BiomeKeys.WINDSWEPT_SAVANNA,
+					BiomeKeys.WOODED_BADLANDS
+				),
+				GenerationStep.Feature.UNDERGROUND_ORES, CAEN_STONE_PLACED_KEY
+		);
 	}
 
 	public static Identifier id(String path) {

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stone_slab",
+  "key": {
+    "#": {
+      "item": "domos-stones-and-ores:caen_stone_bricks_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "domos-stones-and-ores:caen_stone_bricks_stairs"
+  }
+}
