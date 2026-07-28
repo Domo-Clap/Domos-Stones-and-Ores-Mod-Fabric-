@@ -2,10 +2,7 @@ package com.domo.stones.and.ores.block;
 
 import com.domo.stones.and.ores.DomoSStonesAndOres;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -40,6 +37,13 @@ public class ModBlocks {
                     .strength(1.5f, 3.5f))
     );
 
+    public static final Block SERPENTINITE_WALL = registerBlock(
+            "serpentinite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(1.5f, 3.5f))
+    );
+
     // -----------------------------------------
     // Polished Serpentinite block types
     // -----------------------------------------
@@ -60,6 +64,13 @@ public class ModBlocks {
     public static final Block POLISHED_SERPENTINITE_SLAB = registerBlock(
         "polished_serpentinite_slab",
             new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(1.5f, 3.5f))
+    );
+
+    public static final Block POLISHED_SERPENTINITE_BRICKS_WALL = registerBlock(
+            "polished_serpentinite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
                     .strength(1.5f, 3.5f))
     );
@@ -89,6 +100,13 @@ public class ModBlocks {
                     .strength(1.5f, 3.5f))
     );
 
+    public static final Block SERPENTINITE_BRICKS_WALL = registerBlock(
+            "serpentinite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(1.5f, 3.5f))
+    );
+
     // -----------------------------------------
     // Caen Stone block types
     // -----------------------------------------
@@ -110,6 +128,13 @@ public class ModBlocks {
     public static final Block CAEN_STONE_SLAB = registerBlock(
       "caen_stone_slab",
             new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(1.5f, 3.5f))
+    );
+
+    public static final Block CAEN_STONE_WALL = registerBlock(
+            "caen_stone_wall",
+            new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
                     .strength(1.5f, 3.5f))
     );
@@ -137,6 +162,13 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
                     .strength(0.5f, 2.5f))
+    );
+
+    public static final Block CAEN_STONE_BRICKS_WALL = registerBlock(
+            "caen_stone_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(0.5f, 2.5f))
     );
 
     // Function that takes our block and registers it into the correct registry
