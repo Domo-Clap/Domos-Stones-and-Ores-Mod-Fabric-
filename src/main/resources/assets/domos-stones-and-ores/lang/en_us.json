@@ -2,16 +2,21 @@
   "block.domos-stones-and-ores.serpentinite_block": "Serpentinite Block",
   "block.domos-stones-and-ores.serpentinite_stairs": "Serpentinite Stairs",
   "block.domos-stones-and-ores.serpentinite_slab": "Serpentinite Slab",
+  "block.domos-stones-and-ores.serpentinite_wall": "Serpentinite Wall",
   "block.domos-stones-and-ores.polished_serpentinite_block": "Polished Serpentinite Block",
   "block.domos-stones-and-ores.polished_serpentinite_stairs": "Polished Serpentinite Stairs",
   "block.domos-stones-and-ores.polished_serpentinite_slab": "Polished Serpentinite Slab",
+  "block.domos-stones-and-ores.polished_serpentinite_wall": "Polished Serpentinite Wall",
   "block.domos-stones-and-ores.serpentinite_bricks_block": "Serpentinite Bricks",
   "block.domos-stones-and-ores.serpentinite_bricks_stairs": "Serpentinite Brick Stairs",
   "block.domos-stones-and-ores.serpentinite_bricks_slab": "Serpentinite Brick Slab",
+  "block.domos-stones-and-ores.serpentinite_bricks_wall": "Serpentinite Brick Wall",
   "block.domos-stones-and-ores.caen_stone_block": "Caen Stone Block",
   "block.domos-stones-and-ores.caen_stone_slab": "Caen Stone Slab",
   "block.domos-stones-and-ores.caen_stone_stairs": "Caen Stone Stairs",
+  "block.domos-stones-and-ores.caen_stone_wall": "Caen Stone Wall",
   "block.domos-stones-and-ores.caen_stone_bricks_block": "Caen Stone Bricks",
   "block.domos-stones-and-ores.caen_stone_bricks_stairs": "Caen Stone Brick Stairs",
-  "block.domos-stones-and-ores.caen_stone_bricks_slab": "Caen Stone Brick Slab"
+  "block.domos-stones-and-ores.caen_stone_bricks_slab": "Caen Stone Brick Slab",
+  "block.domos-stones-and-ores.caen_stone_bricks_wall": "Caen Stone Bricks Wall"
 }

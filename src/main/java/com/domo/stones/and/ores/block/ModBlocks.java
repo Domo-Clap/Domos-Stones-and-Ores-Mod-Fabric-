@@ -68,8 +68,8 @@ public class ModBlocks {
                     .strength(1.5f, 3.5f))
     );
 
-    public static final Block POLISHED_SERPENTINITE_BRICKS_WALL = registerBlock(
-            "polished_serpentinite_bricks_wall",
+    public static final Block POLISHED_SERPENTINITE_WALL = registerBlock(
+            "polished_serpentinite_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
                     .strength(1.5f, 3.5f))
@@ -134,9 +134,7 @@ public class ModBlocks {
 
     public static final Block CAEN_STONE_WALL = registerBlock(
             "caen_stone_wall",
-            new WallBlock(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5f, 3.5f))
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.ANDESITE_WALL))
     );
 
     // -----------------------------------------
@@ -211,6 +209,9 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).
                 register(entries -> entries.add(SERPENTINITE_SLAB));
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).
+                register(entries -> entries.add(SERPENTINITE_WALL));
+
         // Polished serpentinite blocks being added to the Building Blocks creative tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(POLISHED_SERPENTINITE_BLOCK));
@@ -220,6 +221,9 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(POLISHED_SERPENTINITE_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(POLISHED_SERPENTINITE_WALL));
 
         // Brick blocks being added to the Building Blocks creative tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
@@ -232,6 +236,10 @@ public class ModBlocks {
                 .register(entries -> entries.add(SERPENTINITE_BRICKS_SLAB));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(SERPENTINITE_BRICKS_WALL));
+
+        // Caen Stone
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(CAEN_STONE_BLOCK));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
@@ -241,6 +249,11 @@ public class ModBlocks {
                 .register(entries -> entries.add(CAEN_STONE_SLAB));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(CAEN_STONE_WALL));
+
+
+        // Caen Stone Bricks
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(CAEN_STONE_BRICKS));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
@@ -248,5 +261,8 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(CAEN_STONE_BRICKS_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(CAEN_STONE_BRICKS_WALL));
     }
 }

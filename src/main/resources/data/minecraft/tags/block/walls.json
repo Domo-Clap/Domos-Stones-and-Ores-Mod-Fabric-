@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "domos-stones-and-ores:serpentinite_wall",
+    "domos-stones-and-ores:polished_serpentinite_wall",
+    "domos-stones-and-ores:serpentinite_bricks_wall",
+    "domos-stones-and-ores:caen_stone_wall",
+    "domos-stones-and-ores:caen_stone_bricks_wall"
+  ]
+}
