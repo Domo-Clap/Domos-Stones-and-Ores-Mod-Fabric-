@@ -6,9 +6,9 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "domos-stones-and-ores:block/caen_stone_bricks/caen_stone_bricks_stairs"
+          "name": "domos-stones-and-ores:serpentinite_block"
         }
-      ],
+    ],
       "conditions": [
         {
           "condition": "minecraft:survives_explosion"

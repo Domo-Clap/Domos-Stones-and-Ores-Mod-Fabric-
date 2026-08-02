@@ -1,12 +1,12 @@
 {
-  "type": "minecraft_block",
+  "type": "minecraft:block",
   "pools": [
     {
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "domos-stones-and-ores:block/caen_stone/caen_stone_block"
+          "name": "domos-stones-and-ores:caen_stone_bricks_stairs"
         }
       ],
       "conditions": [

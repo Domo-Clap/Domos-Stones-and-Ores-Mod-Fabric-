@@ -1,12 +1,12 @@
 {
-  "type": "minecraft_block",
+  "type": "minecraft:block",
   "pools": [
     {
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "domos-stones-and-ores:blocks/serpentinite_bricks/serpentinite_bricks_block"
+          "name": "domos-stones-and-ores:polished_serpentinite_stairs"
         }
       ],
       "conditions": [
