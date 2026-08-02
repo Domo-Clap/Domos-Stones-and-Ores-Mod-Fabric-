@@ -169,6 +169,39 @@ public class ModBlocks {
                             .strength(0.5f, 2.5f))
     );
 
+    // -----------------------------------------
+    // Cobbled Caen Stone block types
+    // -----------------------------------------
+    public static final Block COBBLED_CAEN_STONE = registerBlock(
+            "cobbled_caen_stone_block",
+                new Block(AbstractBlock.Settings.create()
+                        .requiresTool()
+                        .strength(0.5f, 2.5f))
+    );
+
+    public static final Block COBBLED_CAEN_STONE_STAIRS = registerBlock(
+      "cobbled_caen_stone_stairs",
+      new StairsBlock(COBBLED_CAEN_STONE.getDefaultState(),
+              AbstractBlock.Settings.create()
+                      .requiresTool()
+                      .strength(0.5f, 2.5f))
+    );
+
+    public static final Block COBBLED_CAEN_STONE_SLAB = registerBlock(
+            "cobbled_caen_stone_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block COBBLED_CAEN_STONE_WALL = registerBlock(
+    "cobbled_caen_stone_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f)
+            )
+    );
+
     // Function that takes our block and registers it into the correct registry
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -264,5 +297,18 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(CAEN_STONE_BRICKS_WALL));
+
+        // Cobbled Caen Stone
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(COBBLED_CAEN_STONE));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(COBBLED_CAEN_STONE_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(COBBLED_CAEN_STONE_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(COBBLED_CAEN_STONE_WALL));
     }
 }

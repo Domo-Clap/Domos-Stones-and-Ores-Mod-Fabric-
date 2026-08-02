@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "domos-stones-and-ores:block/cobbled_caen_stone/cobbled_caen_stone_slab"
+    },
+    "type=top": {
+      "model": "domos-stones-and-ores:block/cobbled_caen_stone/cobbled_caen_stone_slab_top"
+    },
+    "type=double": {
+      "model": "domos-stones-and-ores:block/cobbled_caen_stone/cobbled_caen_stone_block"
+    }
+  }
+}

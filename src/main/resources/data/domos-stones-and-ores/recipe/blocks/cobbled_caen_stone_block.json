@@ -4,7 +4,7 @@
   "group": "stone_slab",
   "key": {
     "#": {
-      "item": "domos-stones-and-ores:cobbled_caen_stone_block"
+      "item": "domos-stones-and-ores:caen_stone_block"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "domos-stones-and-ores:caen_stone_bricks_block"
+    "id": "domos-stones-and-ores:cobbled_caen_stone_block"
   }
 }

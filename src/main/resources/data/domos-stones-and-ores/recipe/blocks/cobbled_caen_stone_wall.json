@@ -1,18 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "stone_slab",
+  "category": "misc",
   "key": {
     "#": {
       "item": "domos-stones-and-ores:cobbled_caen_stone_block"
     }
   },
   "pattern": [
-    "##",
-    "##"
+    "###",
+    "###"
   ],
   "result": {
-    "count": 4,
-    "id": "domos-stones-and-ores:caen_stone_bricks_block"
+    "count": 6,
+    "id": "domos-stones-and-ores:cobbled_caen_stone_wall"
   }
 }
