@@ -202,6 +202,106 @@ public class ModBlocks {
             )
     );
 
+    // -----------------------------------------
+    // Blueschist block types
+    // -----------------------------------------
+    public static final Block BLUESCHIST_BLOCK = registerBlock(
+            "blueschist_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_SLAB = registerBlock(
+            "blueschist_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_STAIRS = registerBlock(
+      "blueschist_stairs",
+            new StairsBlock(BLUESCHIST_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_WALL = registerBlock(
+            "blueschist_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f)
+            )
+    );
+
+    // -----------------------------------------
+    // Polished Blueschist block types
+    // -----------------------------------------
+    public static final Block POLISHED_BLUESCHIST_BLOCK = registerBlock(
+            "polished_blueschist_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block POLISHED_BLUESCHIST_SLAB = registerBlock(
+            "polished_blueschist_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block POLISHED_BLUESCHIST_STAIRS = registerBlock(
+            "polished_blueschist_stairs",
+            new StairsBlock(BLUESCHIST_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(0.5f, 2.5f))
+    );
+
+    public static final Block POLISHED_BLUESCHIST_WALL = registerBlock(
+            "polished_blueschist_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f)
+            )
+    );
+
+    // -----------------------------------------
+    // Blueschist Brick block types
+    // -----------------------------------------
+    public static final Block BLUESCHIST_BRICKS_BLOCK = registerBlock(
+            "blueschist_bricks_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_BRICKS_SLAB = registerBlock(
+            "blueschist_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_BRICKS_STAIRS = registerBlock(
+            "blueschist_bricks_stairs",
+            new StairsBlock(BLUESCHIST_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_BRICKS_WALL = registerBlock(
+            "blueschist_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f)
+            )
+    );
+
+
     // Function that takes our block and registers it into the correct registry
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -310,5 +410,44 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(COBBLED_CAEN_STONE_WALL));
+
+        // Blueschist
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_BLOCK));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_WALL));
+
+        //Polished Blueschist
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(POLISHED_BLUESCHIST_BLOCK));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(POLISHED_BLUESCHIST_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(POLISHED_BLUESCHIST_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(POLISHED_BLUESCHIST_WALL));
+
+        //Blueschist Bricks
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_BRICKS_BLOCK));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_BRICKS_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_BRICKS_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_BRICKS_WALL));
     }
 }

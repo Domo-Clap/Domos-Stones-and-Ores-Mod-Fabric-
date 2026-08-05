@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "wall": "domos-stones-and-ores:block/cobbled_caen_stone_wall"
+    "wall": "domos-stones-and-ores:block/cobbled_caen_stone_block"
   }
 }

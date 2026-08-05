@@ -20,6 +20,10 @@
     "domos-stones-and-ores:caen_stone_bricks_block",
     "domos-stones-and-ores:caen_stone_bricks_slab",
     "domos-stones-and-ores:caen_stone_bricks_stairs",
-    "domos-stones-and-ores:caen_stone_bricks_wall"
+    "domos-stones-and-ores:caen_stone_bricks_wall",
+    "domos-stones-and-ores:cobbled_caen_stone_block",
+    "domos-stones-and-ores:cobbled_caen_stone_slab",
+    "domos-stones-and-ores:cobbled_caen_stone_stairs",
+    "domos-stones-and-ores:cobbled_caen_stone_wall"
   ]
 }
