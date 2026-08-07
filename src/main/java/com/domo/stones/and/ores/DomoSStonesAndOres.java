@@ -23,11 +23,14 @@ public class DomoSStonesAndOres implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	public static final RegistryKey<PlacedFeature> CUSTOM_STONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
+	public static final RegistryKey<PlacedFeature> SERPENTINITE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
 			Identifier.of("domos-stones-and-ores", "serpentinite_block"));
 
 	public static final RegistryKey<PlacedFeature> CAEN_STONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
 			Identifier.of("domos-stones-and-ores", "caen_stone_block"));
+
+	public static final RegistryKey<PlacedFeature> BLUESCHIST_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
+			Identifier.of("domos-stones-and-ores", "blueschist_block"));
 
 	@Override
 	public void onInitialize() {
@@ -37,7 +40,7 @@ public class DomoSStonesAndOres implements ModInitializer {
 		LOGGER.info("Starting to load blocks for mod...");
 		ModBlocks.registerBlocks();
 
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_STONE_PLACED_KEY);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, SERPENTINITE_PLACED_KEY);
 
 		BiomeModifications.addFeature(
 				BiomeSelectors.includeByKey(
@@ -50,6 +53,8 @@ public class DomoSStonesAndOres implements ModInitializer {
 				),
 				GenerationStep.Feature.UNDERGROUND_ORES, CAEN_STONE_PLACED_KEY
 		);
+
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, BLUESCHIST_PLACED_KEY);
 	}
 
 	public static Identifier id(String path) {
