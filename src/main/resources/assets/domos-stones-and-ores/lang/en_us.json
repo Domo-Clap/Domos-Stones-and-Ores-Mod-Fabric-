@@ -22,5 +22,21 @@
   "block.domos-stones-and-ores.cobbled_caen_stone_block": "Cobbled Caen Stone",
   "block.domos-stones-and-ores.cobbled_caen_stone_stairs": "Cobbled Caen Stone Stairs",
   "block.domos-stones-and-ores.cobbled_caen_stone_slab": "Cobbled Caen Stone Slab",
-  "block.domos-stones-and-ores.cobbled_caen_stone_wall": "Cobbled Caen Stone Wall"
+  "block.domos-stones-and-ores.cobbled_caen_stone_wall": "Cobbled Caen Stone Wall",
+  "block.domos-stones-and-ores.blueschist_block": "Blueschist Block",
+  "block.domos-stones-and-ores.blueschist_stairs": "Blueschist Stairs",
+  "block.domos-stones-and-ores.blueschist_slab": "Blueschist Slab",
+  "block.domos-stones-and-ores.blueschist_wall": "Blueschist Wall",
+  "block.domos-stones-and-ores.blueschist_bricks_block": "Blueschist Brick Block",
+  "block.domos-stones-and-ores.blueschist_bricks_stairs": "Blueschist Brick Stairs",
+  "block.domos-stones-and-ores.blueschist_bricks_slab": "Blueschist Brick Slab",
+  "block.domos-stones-and-ores.blueschist_bricks_wall": "Blueschist Brick Wall",
+  "block.domos-stones-and-ores.blueschist_large_bricks_block": "Blueschist Large Brick Block",
+  "block.domos-stones-and-ores.blueschist_large_bricks_stairs": "Blueschist Large Brick Stairs",
+  "block.domos-stones-and-ores.blueschist_large_bricks_slab": "Blueschist Large Brick Slab",
+  "block.domos-stones-and-ores.blueschist_large_bricks_wall": "Blueschist Large Brick Wall",
+  "block.domos-stones-and-ores.polished_blueschist_block": "Polished Blueschist Block",
+  "block.domos-stones-and-ores.polished_blueschist_stairs": "Polished Blueschist Stairs",
+  "block.domos-stones-and-ores.polished_blueschist_slab": "Polished Blueschist Slab",
+  "block.domos-stones-and-ores.polished_blueschist_wall": "Polished Blueschist Wall"
 }

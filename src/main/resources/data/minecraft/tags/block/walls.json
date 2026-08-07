@@ -6,6 +6,10 @@
     "domos-stones-and-ores:serpentinite_bricks_wall",
     "domos-stones-and-ores:caen_stone_wall",
     "domos-stones-and-ores:caen_stone_bricks_wall",
-    "domos-stones-and-ores:cobbled_caen_stone_wall"
+    "domos-stones-and-ores:cobbled_caen_stone_wall",
+    "domos-stones-and-ores:blueschist_wall",
+    "domos-stones-and-ores:blueschist_bricks_wall",
+    "domos-stones-and-ores:blueschist_large_bricks_wall",
+    "domos-stones-and-ores:polished_blueschist_wall"
   ]
 }

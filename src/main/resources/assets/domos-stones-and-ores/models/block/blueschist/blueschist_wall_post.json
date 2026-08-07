@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "domos-stones-and-ores:block/blueschist_block"
+  }
+}

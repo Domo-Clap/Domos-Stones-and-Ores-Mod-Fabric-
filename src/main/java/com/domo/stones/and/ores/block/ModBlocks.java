@@ -301,6 +301,39 @@ public class ModBlocks {
             )
     );
 
+    // -----------------------------------------
+    // Blueschist Large Brick block types
+    // -----------------------------------------
+    public static final Block BLUESCHIST_LARGE_BRICKS_BLOCK = registerBlock(
+            "blueschist_large_bricks_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_LARGE_BRICKS_SLAB = registerBlock(
+            "blueschist_large_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_LARGE_BRICKS_STAIRS = registerBlock(
+            "blueschist_large_bricks_stairs",
+            new StairsBlock(BLUESCHIST_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(0.5f, 2.5f))
+    );
+
+    public static final Block BLUESCHIST_LARGE_BRICKS_WALL = registerBlock(
+            "blueschist_large_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f)
+            )
+    );
+
 
     // Function that takes our block and registers it into the correct registry
     public static Block registerBlock(String name, Block block) {
@@ -449,5 +482,18 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(BLUESCHIST_BRICKS_WALL));
+
+        //Blueschist Large Bricks
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_LARGE_BRICKS_BLOCK));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_LARGE_BRICKS_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_LARGE_BRICKS_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(BLUESCHIST_LARGE_BRICKS_WALL));
     }
 }
