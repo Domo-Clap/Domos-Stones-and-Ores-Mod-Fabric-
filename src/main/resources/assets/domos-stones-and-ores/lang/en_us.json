@@ -39,8 +39,12 @@
   "block.domos-stones-and-ores.polished_blueschist_stairs": "Polished Blueschist Stairs",
   "block.domos-stones-and-ores.polished_blueschist_slab": "Polished Blueschist Slab",
   "block.domos-stones-and-ores.polished_blueschist_wall": "Polished Blueschist Wall",
-  "block.domos-stones-and-ores.dolomite": "Dolomite Block",
+  "block.domos-stones-and-ores.dolomite_block": "Dolomite Block",
   "block.domos-stones-and-ores.dolomite_stairs": "Dolomite Stairs",
   "block.domos-stones-and-ores.dolomite_slab": "Dolomite Slab",
-  "block.domos-stones-and-ores.dolomite_block": "Dolomite Block"
+  "block.domos-stones-and-ores.dolomite_wall": "Dolomite Wall",
+  "block.domos-stones-and-ores.dolomite_bricks_block": "Dolomite Brick Block",
+  "block.domos-stones-and-ores.dolomite_bricks_slab": "Dolomite Brick Slab",
+  "block.domos-stones-and-ores.dolomite_bricks_stairs": "Dolomite Brick Stairs",
+  "block.domos-stones-and-ores.dolomite_bricks_wall": "Dolomite Brick Wall"
 }

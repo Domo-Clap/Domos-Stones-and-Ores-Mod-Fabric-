@@ -40,6 +40,14 @@
     "domos-stones-and-ores:blueschist_large_bricks_block",
     "domos-stones-and-ores:blueschist_large_bricks_slab",
     "domos-stones-and-ores:blueschist_large_bricks_stairs",
-    "domos-stones-and-ores:blueschist_large_bricks_wall"
+    "domos-stones-and-ores:blueschist_large_bricks_wall",
+    "domos-stones-and-ores:dolomite_block",
+    "domos-stones-and-ores:dolomite_slab",
+    "domos-stones-and-ores:dolomite_stairs",
+    "domos-stones-and-ores:dolomite_wall",
+    "domos-stones-and-ores:dolomite_bricks_block",
+    "domos-stones-and-ores:dolomite_bricks_slab",
+    "domos-stones-and-ores:dolomite_bricks_stairs",
+    "domos-stones-and-ores:dolomite_bricks_wall"
   ]
 }

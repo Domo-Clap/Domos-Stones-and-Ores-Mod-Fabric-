@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "domos-stones-and-ores:block/dolomite_bricks_block"
+  }
+}

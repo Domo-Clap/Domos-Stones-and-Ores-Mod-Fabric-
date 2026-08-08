@@ -367,6 +367,39 @@ public class ModBlocks {
             )
     );
 
+    // -----------------------------------------
+    // Dolomite Brick block types
+    // -----------------------------------------
+    public static final Block DOLOMITE_BRICKS_BLOCK = registerBlock(
+            "dolomite_bricks_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block DOLOMITE_BRICKS_SLAB = registerBlock(
+            "dolomite_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block DOLOMITE_BRICKS_STAIRS = registerBlock(
+            "dolomite_bricks_stairs",
+            new StairsBlock(DOLOMITE_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(0.5f, 2.5f))
+    );
+
+    public static final Block DOLOMITE_BRICKS_WALL = registerBlock(
+            "dolomite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f)
+            )
+    );
+
 
     // Function that takes our block and registers it into the correct registry
     public static Block registerBlock(String name, Block block) {
@@ -541,5 +574,18 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(DOLOMITE_WALL));
+
+        //Dolomite
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(DOLOMITE_BRICKS_BLOCK));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(DOLOMITE_BRICKS_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(DOLOMITE_BRICKS_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(DOLOMITE_BRICKS_WALL));
     }
 }
