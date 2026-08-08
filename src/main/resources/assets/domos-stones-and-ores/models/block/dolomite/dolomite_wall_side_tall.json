@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "domos-stones-and-ores:block/dolomite_block"
+  }
+}

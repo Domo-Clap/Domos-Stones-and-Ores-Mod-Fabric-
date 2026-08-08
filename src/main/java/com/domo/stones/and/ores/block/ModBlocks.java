@@ -334,6 +334,39 @@ public class ModBlocks {
             )
     );
 
+    // -----------------------------------------
+    // Dolomite block types
+    // -----------------------------------------
+    public static final Block DOLOMITE_BLOCK = registerBlock(
+            "dolomite_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block DOLOMITE_SLAB = registerBlock(
+            "dolomite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
+    public static final Block DOLOMITE_STAIRS = registerBlock(
+            "dolomite_stairs",
+            new StairsBlock(DOLOMITE_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(0.5f, 2.5f))
+    );
+
+    public static final Block DOLOMITE_WALL = registerBlock(
+            "dolomite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f)
+            )
+    );
+
 
     // Function that takes our block and registers it into the correct registry
     public static Block registerBlock(String name, Block block) {
@@ -495,5 +528,18 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(BLUESCHIST_LARGE_BRICKS_WALL));
+
+        //Dolomite
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(DOLOMITE_BLOCK));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(DOLOMITE_STAIRS));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(DOLOMITE_SLAB));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(DOLOMITE_WALL));
     }
 }

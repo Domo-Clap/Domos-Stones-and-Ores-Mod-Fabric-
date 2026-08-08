@@ -9,6 +9,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
@@ -31,6 +32,9 @@ public class DomoSStonesAndOres implements ModInitializer {
 
 	public static final RegistryKey<PlacedFeature> BLUESCHIST_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
 			Identifier.of("domos-stones-and-ores", "blueschist_block"));
+
+	public static final RegistryKey<PlacedFeature> DOLOMITE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
+			Identifier.of("domos-stones-and-ores", "dolomite_block"));
 
 	@Override
 	public void onInitialize() {
@@ -55,6 +59,26 @@ public class DomoSStonesAndOres implements ModInitializer {
 		);
 
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, BLUESCHIST_PLACED_KEY);
+
+		BiomeModifications.addFeature(
+				BiomeSelectors.includeByKey(
+						BiomeKeys.SAVANNA_PLATEAU,
+						BiomeKeys.JAGGED_PEAKS,
+						BiomeKeys.WINDSWEPT_HILLS,
+						BiomeKeys.CHERRY_GROVE,
+						BiomeKeys.JUNGLE,
+						BiomeKeys.FOREST,
+						BiomeKeys.OLD_GROWTH_BIRCH_FOREST,
+						BiomeKeys.SPARSE_JUNGLE,
+						BiomeKeys.OLD_GROWTH_PINE_TAIGA,
+						BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA,
+						BiomeKeys.DARK_FOREST,
+						BiomeKeys.TAIGA,
+						BiomeKeys.WINDSWEPT_FOREST,
+						BiomeKeys.BIRCH_FOREST
+				),
+				GenerationStep.Feature.UNDERGROUND_ORES, DOLOMITE_PLACED_KEY
+		);
 	}
 
 	public static Identifier id(String path) {
