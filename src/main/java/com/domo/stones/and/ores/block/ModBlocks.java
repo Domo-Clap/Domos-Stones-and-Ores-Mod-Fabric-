@@ -400,6 +400,16 @@ public class ModBlocks {
             )
     );
 
+    // -----------------------------------------
+    // Anthracite Block
+    // -----------------------------------------
+    public static final Block ANTHRACITE_BLOCK = registerBlock(
+            "anthracite_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(0.5f, 2.5f))
+    );
+
 
     // Function that takes our block and registers it into the correct registry
     public static Block registerBlock(String name, Block block) {
@@ -587,5 +597,9 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(entries -> entries.add(DOLOMITE_BRICKS_WALL));
+
+        // Anthracite
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(ANTHRACITE_BLOCK));
     }
 }

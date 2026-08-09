@@ -36,6 +36,9 @@ public class DomoSStonesAndOres implements ModInitializer {
 	public static final RegistryKey<PlacedFeature> DOLOMITE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
 			Identifier.of("domos-stones-and-ores", "dolomite_block"));
 
+	public static final RegistryKey<PlacedFeature> ANTHRACITE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
+			Identifier.of("domos-stones-and-ores", "anthracite_block"));
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -79,6 +82,8 @@ public class DomoSStonesAndOres implements ModInitializer {
 				),
 				GenerationStep.Feature.UNDERGROUND_ORES, DOLOMITE_PLACED_KEY
 		);
+
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ANTHRACITE_PLACED_KEY);
 	}
 
 	public static Identifier id(String path) {
