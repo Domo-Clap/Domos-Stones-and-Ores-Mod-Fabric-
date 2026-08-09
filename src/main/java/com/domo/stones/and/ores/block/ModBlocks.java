@@ -19,7 +19,7 @@ public class ModBlocks {
             "serpentinite_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(1.5f, 3.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block SERPENTINITE_STAIRS = registerBlock(
@@ -27,21 +27,21 @@ public class ModBlocks {
             new StairsBlock(SERPENTINITE_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .requiresTool()
-                            .strength(1.5f, 3.5f))
+                            .strength(1.5f, 6f))
     );
 
     public static final Block SERPENTINITE_SLAB = registerBlock(
             "serpentinite_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(1.5f, 3.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block SERPENTINITE_WALL = registerBlock(
             "serpentinite_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(1.5f, 3.5f))
+                    .strength(1.5f, 6f))
     );
 
     // -----------------------------------------
@@ -51,28 +51,28 @@ public class ModBlocks {
       "polished_serpentinite_block",
       new Block(AbstractBlock.Settings.create()
               .requiresTool()
-              .strength(1.5f, 3.5f))
+              .strength(1.5f, 6f))
     );
 
     public static final Block POLISHED_SERPENTINITE_STAIRS = registerBlock(
       "polished_serpentinite_stairs",
       new StairsBlock(POLISHED_SERPENTINITE_BLOCK.getDefaultState(),
               AbstractBlock.Settings.create()
-                      .requiresTool().strength(1.5f, 3.5f))
+                      .requiresTool().strength(1.5f, 6f))
     );
 
     public static final Block POLISHED_SERPENTINITE_SLAB = registerBlock(
         "polished_serpentinite_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(1.5f, 3.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block POLISHED_SERPENTINITE_WALL = registerBlock(
             "polished_serpentinite_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(1.5f, 3.5f))
+                    .strength(1.5f, 6f))
     );
 
     // -----------------------------------------
@@ -82,7 +82,7 @@ public class ModBlocks {
             "serpentinite_bricks_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(1.5f, 3.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block SERPENTINITE_BRICKS_STAIRS = registerBlock(
@@ -90,21 +90,21 @@ public class ModBlocks {
             new StairsBlock(SERPENTINITE_BRICKS_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .requiresTool()
-                            .strength(1.5f, 3.5f))
+                            .strength(1.5f, 6f))
     );
 
     public static final Block SERPENTINITE_BRICKS_SLAB = registerBlock(
             "serpentinite_bricks_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(1.5f, 3.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block SERPENTINITE_BRICKS_WALL = registerBlock(
             "serpentinite_bricks_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(1.5f, 3.5f))
+                    .strength(1.5f, 6f))
     );
 
     // -----------------------------------------
@@ -209,14 +209,14 @@ public class ModBlocks {
             "blueschist_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_SLAB = registerBlock(
             "blueschist_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_STAIRS = registerBlock(
@@ -224,14 +224,14 @@ public class ModBlocks {
             new StairsBlock(BLUESCHIST_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .requiresTool()
-                            .strength(0.5f, 2.5f))
+                            .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_WALL = registerBlock(
             "blueschist_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f)
+                    .strength(1.5f, 6f)
             )
     );
 
@@ -242,14 +242,14 @@ public class ModBlocks {
             "polished_blueschist_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block POLISHED_BLUESCHIST_SLAB = registerBlock(
             "polished_blueschist_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block POLISHED_BLUESCHIST_STAIRS = registerBlock(
@@ -257,14 +257,14 @@ public class ModBlocks {
             new StairsBlock(BLUESCHIST_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .requiresTool()
-                            .strength(0.5f, 2.5f))
+                            .strength(1.5f, 6f))
     );
 
     public static final Block POLISHED_BLUESCHIST_WALL = registerBlock(
             "polished_blueschist_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f)
+                    .strength(1.5f, 6f)
             )
     );
 
@@ -275,14 +275,14 @@ public class ModBlocks {
             "blueschist_bricks_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_BRICKS_SLAB = registerBlock(
             "blueschist_bricks_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_BRICKS_STAIRS = registerBlock(
@@ -290,14 +290,14 @@ public class ModBlocks {
             new StairsBlock(BLUESCHIST_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .requiresTool()
-                            .strength(0.5f, 2.5f))
+                            .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_BRICKS_WALL = registerBlock(
             "blueschist_bricks_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f)
+                    .strength(1.5f, 6f)
             )
     );
 
@@ -308,14 +308,14 @@ public class ModBlocks {
             "blueschist_large_bricks_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_LARGE_BRICKS_SLAB = registerBlock(
             "blueschist_large_bricks_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_LARGE_BRICKS_STAIRS = registerBlock(
@@ -323,14 +323,14 @@ public class ModBlocks {
             new StairsBlock(BLUESCHIST_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .requiresTool()
-                            .strength(0.5f, 2.5f))
+                            .strength(1.5f, 6f))
     );
 
     public static final Block BLUESCHIST_LARGE_BRICKS_WALL = registerBlock(
             "blueschist_large_bricks_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f)
+                    .strength(1.5f, 6f)
             )
     );
 
@@ -341,14 +341,14 @@ public class ModBlocks {
             "dolomite_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(0.8f, 2.5f))
     );
 
     public static final Block DOLOMITE_SLAB = registerBlock(
             "dolomite_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(0.8f, 2.5f))
     );
 
     public static final Block DOLOMITE_STAIRS = registerBlock(
@@ -356,14 +356,14 @@ public class ModBlocks {
             new StairsBlock(DOLOMITE_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .requiresTool()
-                            .strength(0.5f, 2.5f))
+                            .strength(0.8f, 2.5f))
     );
 
     public static final Block DOLOMITE_WALL = registerBlock(
             "dolomite_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f)
+                    .strength(0.8f, 2.5f)
             )
     );
 
@@ -374,14 +374,14 @@ public class ModBlocks {
             "dolomite_bricks_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(0.8f, 2.5f))
     );
 
     public static final Block DOLOMITE_BRICKS_SLAB = registerBlock(
             "dolomite_bricks_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(0.8f, 2.5f))
     );
 
     public static final Block DOLOMITE_BRICKS_STAIRS = registerBlock(
@@ -389,14 +389,14 @@ public class ModBlocks {
             new StairsBlock(DOLOMITE_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .requiresTool()
-                            .strength(0.5f, 2.5f))
+                            .strength(0.8f, 2.5f))
     );
 
     public static final Block DOLOMITE_BRICKS_WALL = registerBlock(
             "dolomite_bricks_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f)
+                    .strength(0.8f, 2.5f)
             )
     );
 
@@ -407,7 +407,7 @@ public class ModBlocks {
             "anthracite_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
-                    .strength(0.5f, 2.5f))
+                    .strength(1.5f, 6.5f))
     );
 
 
